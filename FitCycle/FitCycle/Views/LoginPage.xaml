@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:translate="clr-namespace:FitCycle.Resources"
+             mc:Ignorable="d"
+             x:Class="FitCycle.Views.LoginPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <Grid>
+            <Image Style="{StaticResource AppBackgroundImage}"/>
+            <StackLayout  HorizontalOptions="EndAndExpand" Margin="10">
+                <Label Text="Testing-Mode:"  TextColor="White" HorizontalOptions="Center"/>
+                <Switch x:Name="Testing" Toggled="Testing_Toggled" IsToggled="false" HorizontalOptions="Center"/>
+                <!--Only for testing-->
+            </StackLayout>
+            <StackLayout>
+                <Image Source="logo_250x250.png" WidthRequest="200" Aspect="AspectFit" HorizontalOptions="Center"/>
+
+                <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                    <Entry Text="{Binding MailAdress}" Keyboard="Email" Placeholder="{x:Static translate:AppResources.Mailadress}"
+                           TextColor="Black" PlaceholderColor="Gray"/>
+                </yummy:PancakeView>
+                <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                    <Entry Text="{Binding Password}" Placeholder="{x:Static translate:AppResources.Password}" IsPassword="True" TextColor="Black"/>
+                </yummy:PancakeView>
+                <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Margin="10">
+                    <Button Clicked="Login_Clicked" Text="Login" BackgroundColor="{StaticResource MainRed}" TextColor="White"/>
+                </yummy:PancakeView>
+
+                <Label  Text="{Binding Message}" Margin="10,0,0,10" d:Text="Message will appear here..."
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" FontSize="Body" TextColor="White" />
+
+                <StackLayout>
+                    <yummy:PancakeView CornerRadius="10,10,0,0" HasShadow="True" Margin="10,10,10,0" BackgroundColor="White" Opacity="0.5" VerticalOptions="EndAndExpand">
+                        <StackLayout>
+                            <Label Text="{x:Static translate:AppResources.New_here__Collect_data_in_profile}"
+                               VerticalOptions="End" Padding="5" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        </StackLayout>
+                    </yummy:PancakeView>
+                    <yummy:PancakeView CornerRadius="0,0,10,10" HasShadow="True" Margin="10,-5,10,40" BackgroundColor="White" Opacity="1" VerticalOptions="EndAndExpand">
+                        <StackLayout>
+                            <Button Clicked="CreateAccount_Clicked" Text="{x:Static translate:AppResources.CreateAccount}" TextColor="White"
+                            VerticalOptions="End" BackgroundColor="{StaticResource MainBlue}" />
+                        </StackLayout>
+                    </yummy:PancakeView>
+                </StackLayout>
+                
+
+            </StackLayout>
+            <ActivityIndicator d:IsRunning="True" HeightRequest="100" IsRunning="{Binding IsBusy}" Margin="0,5"
+                               Color="{StaticResource MainRed}" WidthRequest="100" HorizontalOptions="CenterAndExpand"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitCycle.App">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="AppBackground">LightGray</Color>
+            <Style x:Key="AppBackgroundImage" TargetType="Image">
+                <Setter Property="Source" Value="background_blue.png"/>
+                <Setter Property="Aspect" Value="AspectFill"/>
+                <!--<Setter Property="Opacity" Value="1"/>-->
+            </Style>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#2E3F8F" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+            <Color x:Key="MainBlue">#2E3F8F</Color>
+            <Color x:Key="SecondBlue">#8DC6FF</Color>
+            <Color x:Key="MainRed">#7F0000</Color>
+            <Color x:Key="MainGreen">#BCFF8F</Color>
+            <Style TargetType="ContentPage">
+                <!--<Setter Property="BackgroundImageSource" Value="background1_test.jpg"></Setter>-->
+            </Style>
+            <Style TargetType="Frame" x:Key="RoundButton">
+                <Setter Property="CornerRadius" Value="40"/>
+                <Setter Property="BackgroundColor" Value="{StaticResource MainBlue}"/>
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="Margin" Value="10"/>
+                <Setter Property="WidthRequest" Value="40"/>
+                <Setter Property="HeightRequest" Value="40"/>
+                <Setter Property="MinimumHeightRequest" Value="40"/>
+                <Setter Property="HasShadow" Value="True"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitCycle.Views.DashboardPage"
+             Title="{Binding Title}">
+    <ContentPage.Content>
+        <Grid>
+            <Image Style="{StaticResource AppBackgroundImage}"/>
+            <StackLayout>
+                <Label Text="{Binding Subtitle}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" FontSize="Title" />
+                <!--<Button Clicked="Account_Clicked" Text="Mein Profil bearbeiten" />
+                <Button Clicked="Logout_Clicked" Text="Logout" Margin="0,0,0,40" />
+                <Button Clicked="About_Clicked" Text="About FitCycle" Margin="0,0,0,40" />-->
+                <!--<Label  Text="{Binding Message}"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start" FontSize="Body" TextColor="#670101" />-->
+
+                
+            </StackLayout>
+            <ActivityIndicator HeightRequest="100" IsRunning="{Binding IsBusy}" Margin="0,5" Color="Blue"/>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

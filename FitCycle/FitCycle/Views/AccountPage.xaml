@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:custom="clr-namespace:FitCycle.Services"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:translate="clr-namespace:FitCycle.Resources"
+             mc:Ignorable="d"
+             x:Class="FitCycle.Views.AccountPage"
+             Title="{Binding Title}">
+
+    <ContentPage.Content>
+        <Grid>
+            <Image Style="{StaticResource AppBackgroundImage}"/>
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="profile_placeholder.png" WidthRequest="200" Aspect="AspectFit" HorizontalOptions="Center"/>
+                    <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                        <Entry Text="{Binding Username}" Keyboard="Text" Placeholder="{x:Static translate:AppResources.Name}"
+                           TextColor="Black" PlaceholderColor="Gray"/>
+                    </yummy:PancakeView>
+                    <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                        <Entry Text="{Binding MailAdress}" Keyboard="Email" Placeholder="{x:Static translate:AppResources.Mailadress}"
+                           TextColor="Black" PlaceholderColor="Gray"/>
+                    </yummy:PancakeView>
+                    <Grid>
+                        <Label Grid.Row="0" Grid.Column="0" Text="{x:Static translate:AppResources.Weight}" 
+                               Margin="10,0,0,-10" TextColor="White" FontSize="Small" VerticalTextAlignment="Center"/>
+                        <yummy:PancakeView Grid.Row="1" Grid.Column="0" CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                            <custom:RoundStepper Text="{Binding Weight}" HorizontalOptions="EndAndExpand" Placeholder=""
+                                             PlaceholderColor="Gray" IsEntryEnabled="True"/>
+                        </yummy:PancakeView>
+                        <Label Grid.Row="0" Grid.Column="1" Text="{x:Static translate:AppResources.Age}" 
+                               Margin="10,0,0,-10" TextColor="White" FontSize="Small" VerticalTextAlignment="Center"/>
+                        <yummy:PancakeView Grid.Row="1" Grid.Column="1" CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                            <custom:RoundStepper Text="{Binding Age}" HorizontalOptions="EndAndExpand" Placeholder=""
+                                             PlaceholderColor="Gray" IsEntryEnabled="True"/>
+                        </yummy:PancakeView>
+                    </Grid>
+                    <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                        <Entry Text="{Binding Password}" Keyboard="Text" Placeholder="{x:Static translate:AppResources.Password}"
+                           TextColor="Black" PlaceholderColor="Gray" Focused="OnPassword_tapped" IsPassword="True"/>
+                    </yummy:PancakeView>
+                    <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Opacity="0.5" Margin="10">
+                        <Entry x:Name="Entry_password_copy" Keyboard="Text" Placeholder="{x:Static translate:AppResources.Confirm_Password}"
+                           TextColor="Black" PlaceholderColor="Gray" IsPassword="True" IsEnabled="False"/>
+                    </yummy:PancakeView>
+                    <yummy:PancakeView CornerRadius="10,10,10,10" HasShadow="True" BackgroundColor="White" Margin="10">
+                        <Button Clicked="Create_Account" Text="{x:Static translate:AppResources.CreateAccount}" BackgroundColor="{StaticResource MainRed}" TextColor="White"/>
+                    </yummy:PancakeView>
+                    <StackLayout.GestureRecognizers>
+                        <PanGestureRecognizer PanUpdated="Refresh"/>
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+            </ScrollView>
+            <ActivityIndicator WidthRequest="100" HorizontalOptions="Center" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" d:IsVisible="True" d:IsRunning="True" Color="{StaticResource MainRed}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

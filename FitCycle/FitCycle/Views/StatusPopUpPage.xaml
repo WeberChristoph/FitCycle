@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rg:PopupPage  xmlns:rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FitCycle.Views.StatusPopUpPage">
+    <ContentPage.Content>
+        <Frame BackgroundColor="{StaticResource MainBlue}" HasShadow="True"
+                    VerticalOptions="Center" HorizontalOptions="Center" CornerRadius="15"
+                     Padding="10"  Margin="30" WidthRequest="250" HeightRequest="150">
+
+            <StackLayout HeightRequest="150">
+                <Image Source="{Binding StatusPic}"  d:Source="symbol_settings.png"
+                       HorizontalOptions="Center" HeightRequest="80" VerticalOptions="Center"/>
+                <Label Text="{Binding StatusText}"  d:Text="Statusbeschreibung steht hier..."
+                       HorizontalOptions="CenterAndExpand" VerticalOptions="End"
+                       TextColor="White" FontSize="Subtitle"/>
+                <ProgressBar Progress="{Binding Progress}" d:Progress="0.8" 
+                             ProgressColor="Wheat" VerticalOptions="EndAndExpand"
+                             HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+        </Frame>
+    </ContentPage.Content>
+</rg:PopupPage >

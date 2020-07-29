@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:translate="clr-namespace:FitCycle.Resources"
+             mc:Ignorable="d"
+             x:Class="FitCycle.Views.MenuPage"
+             Title="Menu">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <BoxView BackgroundColor="{StaticResource MainBlue}" Grid.RowSpan="3"/>
+            <StackLayout Orientation="Horizontal" Grid.Row="0">
+                <Image Source="badge_250x250.png" Aspect="AspectFit" HeightRequest="70"/>
+                <StackLayout Margin="10">
+                    <Label Text="FitCycle" TextColor="White" FontSize="25" Margin="0" VerticalTextAlignment="Center"/>
+                    <Label Text="map my training" TextColor="LightGray" FontSize="15" Margin="0,-8,0,0"  VerticalTextAlignment="Center"/>
+                </StackLayout>
+                <ActivityIndicator d:IsVisible="True" d:IsRunning="True" IsRunning="{Binding IsBusy}"
+                                   HorizontalOptions="EndAndExpand" Color="White"/>
+            </StackLayout>
+            <BoxView BackgroundColor="White" Grid.Row="1"/>
+            <ListView x:Name="ListViewMenu" HasUnevenRows="True" Grid.Row="2">
+                <d:ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Item 1</x:String>
+                        <x:String>Item 2</x:String>
+                        <x:String>Item 3</x:String>
+                    </x:Array>
+                </d:ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BorderColor="{StaticResource MainBlue}" BackgroundColor="{StaticResource MainBlue}" HasShadow="True" Padding="2" Margin="10">
+                                <Grid Padding="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="40"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="30"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Source="{Binding Icon}" d:Source="symbol_calendar.png" WidthRequest="40" Aspect="AspectFit" Grid.Column="0"/>
+                                    <Label Text="{Binding Title}" d:Text="{Binding .}" TextColor="White" VerticalTextAlignment="Center" FontSize="20" Grid.Column="1"/>
+                                </Grid>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

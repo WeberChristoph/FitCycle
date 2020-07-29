@@ -1,0 +1,13 @@
+CREATE TABLE [dbo].[Exercises] (
+    [ID]              INT           IDENTITY (1, 1) NOT NULL,
+    [ExerciseName]    VARCHAR (100) NOT NULL,
+    [MuscleGroup]     VARCHAR (100) NOT NULL,
+    [WeightSteps]     REAL          NULL,
+    [Repeats]         REAL          NULL,
+    [RepeatsOverload] REAL          NULL,
+    [ExerciseBasic]   VARCHAR (20)  NULL,
+    [OKUK]            VARCHAR (10)  NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC),
+    UNIQUE NONCLUSTERED ([ExerciseName] ASC),
+    CONSTRAINT [chk_OKUK] CHECK ([OKUK]='UK' OR [OKUK]='OK')
+);

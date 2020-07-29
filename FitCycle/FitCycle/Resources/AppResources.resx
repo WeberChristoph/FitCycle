@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Access not allowed" xml:space="preserve">
+    <value>Zugriff nicht erlaubt</value>
+  </data>
+  <data name="Account" xml:space="preserve">
+    <value>Account</value>
+  </data>
+  <data name="Account could not be created" xml:space="preserve">
+    <value>Account konnte nicht erstellt werden</value>
+  </data>
+  <data name="Account could not be updated" xml:space="preserve">
+    <value>Account konnte leider nicht aktualisiert werden</value>
+  </data>
+  <data name="Add exercise" xml:space="preserve">
+    <value>Übungen hinzufügen</value>
+  </data>
+  <data name="Age" xml:space="preserve">
+    <value>Alter</value>
+  </data>
+  <data name="Are you sure to add a new week" xml:space="preserve">
+    <value>Willst du wirklich eine neue Woche zum Zyklus hinzufügen?</value>
+  </data>
+  <data name="Are you sure to only train x weeks and delete others" xml:space="preserve">
+    <value>Willst du wirklich nur mehr {0} Wochen trainieren und alle anderen Trainingstage löschen?</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Zurück</value>
+  </data>
+  <data name="Calculate" xml:space="preserve">
+    <value>Berechnen</value>
+  </data>
+  <data name="Cancel training cycle" xml:space="preserve">
+    <value>Trainingszyklus abbrechen</value>
+  </data>
+  <data name="Cant delete exercise otherwise  training day empty" xml:space="preserve">
+    <value>Du kannst diese Übung nicht löschen, da ansonsten dein Trainingstag ohne Übungen wär</value>
+  </data>
+  <data name="Change password" xml:space="preserve">
+    <value>Passwort ändern</value>
+  </data>
+  <data name="Change weekcount asQuestion" xml:space="preserve">
+    <value>Wochenanzahl ändern?</value>
+  </data>
+  <data name="Chat" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="Click to change the maximum force values" xml:space="preserve">
+    <value>Klicken, um die Maximalkraftwerte zu ändern</value>
+  </data>
+  <data name="Confirm Password" xml:space="preserve">
+    <value>Passwort bestätigen</value>
+  </data>
+  <data name="Connection could not be established" xml:space="preserve">
+    <value>Verbindung konnte nicht aufgebaut werden</value>
+  </data>
+  <data name="Create a new cycle" xml:space="preserve">
+    <value>Neuen Zyklus erstellen</value>
+  </data>
+  <data name="Create a new training cycle" xml:space="preserve">
+    <value>Erstelle einen neuen Trainingszyklus oder überprüfe deine Internetverbindung</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>FitCycle Account erstellen</value>
+  </data>
+  <data name="Cycle lasts x weeks" xml:space="preserve">
+    <value>Zyklus dauert {0} Wochen</value>
+  </data>
+  <data name="cycle_description" xml:space="preserve">
+    <value>Ein Trainingszyklus beschreibt dein wöchtliches Training.
+Lege für jeden Wochentag deine Übungen fest und plane für jeden Trainingstag deine Wiederholungen, Sätze und Gewichte je Übung.
+Gib jetzt noch an wie viele Wochen der Zyklus dauern soll, welchen Trainingsplit du verwenden sowie wann du trainieren möchtest und schon gehts los!</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="Deload Week intensity" xml:space="preserve">
+    <value>Intensität Deload-Week</value>
+  </data>
+  <data name="Do you want to save changes" xml:space="preserve">
+    <value>Willst du deine Änderungen speichern?</value>
+  </data>
+  <data name="Edit profile" xml:space="preserve">
+    <value>Profil bearbeiten</value>
+  </data>
+  <data name="Email or password incorrect" xml:space="preserve">
+    <value>E-Mail oder Passwort inkorrekt</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>Ende</value>
+  </data>
+  <data name="error at loading" xml:space="preserve">
+    <value>Fehler beim Laden</value>
+  </data>
+  <data name="Exercise type" xml:space="preserve">
+    <value>Übungsart</value>
+  </data>
+  <data name="ExercisePage_Description" xml:space="preserve">
+    <value>Wähle eine Übung aus, um Details anzuzeigen.
+Wische nach links um eine Übung zu löschen.</value>
+  </data>
+  <data name="Exercises" xml:space="preserve">
+    <value>Übungen</value>
+  </data>
+  <data name="Exercises could not be loaded" xml:space="preserve">
+    <value>Übungen konnten nicht geladen werden. Überprüfe deine Internetverbindung</value>
+  </data>
+  <data name="Exercises_withDots" xml:space="preserve">
+    <value>Übungen:</value>
+  </data>
+  <data name="Finish exercise" xml:space="preserve">
+    <value>Übung beenden</value>
+  </data>
+  <data name="Finish training" xml:space="preserve">
+    <value>Training beenden</value>
+  </data>
+  <data name="FitCycleUser" xml:space="preserve">
+    <value>FitCycleUser</value>
+  </data>
+  <data name="GoTo Login" xml:space="preserve">
+    <value>Zum Login</value>
+  </data>
+  <data name="Intro Week intensity" xml:space="preserve">
+    <value>Intensität Intro-Week</value>
+  </data>
+  <data name="kg" xml:space="preserve">
+    <value>kg</value>
+  </data>
+  <data name="Load cycle from archive" xml:space="preserve">
+    <value>Zyklus aus Archiv laden</value>
+  </data>
+  <data name="Load settings failded Please contact support" xml:space="preserve">
+    <value>Einstellungen konnten nicht vom Server geladen werden. Bitte wende dich an den AppSupport.</value>
+  </data>
+  <data name="Loading settings" xml:space="preserve">
+    <value>Einstellungen werden geladen...</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login failed" xml:space="preserve">
+    <value>Login fehlgeschlagen</value>
+  </data>
+  <data name="Login successful" xml:space="preserve">
+    <value>Login erfolgreich</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Looking for your training cycles" xml:space="preserve">
+    <value>Wir suchen nach deinen Trainingszyklen...</value>
+  </data>
+  <data name="Mailadress" xml:space="preserve">
+    <value>Mailadresse</value>
+  </data>
+  <data name="Maximum force" xml:space="preserve">
+    <value>Maximalkraft</value>
+  </data>
+  <data name="Maximum force Values" xml:space="preserve">
+    <value>Maximalkraftwerte</value>
+  </data>
+  <data name="Menue" xml:space="preserve">
+    <value>Menü</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Nachricht</value>
+  </data>
+  <data name="muscle Group" xml:space="preserve">
+    <value>Muskelgruppe</value>
+  </data>
+  <data name="My new cycle" xml:space="preserve">
+    <value>Mein neuer Zyklus</value>
+  </data>
+  <data name="My training cycle lasts x weeks" xml:space="preserve">
+    <value>Mein Trainingszyklus dauert {0} Wochen</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="New_here?_Collect_data_in_profile" xml:space="preserve">
+    <value>Neu hier? Sammle alle Daten in deinem persönlichen Profil</value>
+  </data>
+  <data name="Next exercise" xml:space="preserve">
+    <value>Nächste Übung</value>
+  </data>
+  <data name="Next training day" xml:space="preserve">
+    <value>Nächster Trainingstag</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nein</value>
+  </data>
+  <data name="No current cycle found" xml:space="preserve">
+    <value>Es konnte kein aktueller Zyklus gefunden werden</value>
+  </data>
+  <data name="No current training cycle found" xml:space="preserve">
+    <value>Keinen aktuellen Trainingszyklus gefunden</value>
+  </data>
+  <data name="No current training days found" xml:space="preserve">
+    <value>Keine aktuellen Trainingstage gefunden</value>
+  </data>
+  <data name="No exercises found" xml:space="preserve">
+    <value>Keine Übungen gefunden</value>
+  </data>
+  <data name="No suitable exercise found" xml:space="preserve">
+    <value>Keine passende Übung gefunden</value>
+  </data>
+  <data name="no training" xml:space="preserve">
+    <value>Kein Training</value>
+  </data>
+  <data name="No training days found. Cycle could not canceled" xml:space="preserve">
+    <value>Keine Trainingstage gefunden. Zyklus konnte nicht abgebrochen werden.</value>
+  </data>
+  <data name="Oh Yes please" xml:space="preserve">
+    <value>Oh! Ja, bitte</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Oops cycle extension failed" xml:space="preserve">
+    <value>Ups, Zyklus-Verlängerung fehlgeschlagen</value>
+  </data>
+  <data name="Oops, unfortunately we couldn't create a new cycle" xml:space="preserve">
+    <value>Ups, es konnte leider kein neuer Zyklus erstellt werden</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Passwort</value>
+  </data>
+  <data name="Password could not be changed" xml:space="preserve">
+    <value>Passwort konnte nicht geändert werden</value>
+  </data>
+  <data name="Password invalid" xml:space="preserve">
+    <value>Passwort ungültig</value>
+  </data>
+  <data name="Passwords do not match" xml:space="preserve">
+    <value>Passwörter stimmen nicht überein</value>
+  </data>
+  <data name="Planed_withDots" xml:space="preserve">
+    <value>Geplant:</value>
+  </data>
+  <data name="Please add exercises to your list" xml:space="preserve">
+    <value>Bitte füge Übungen deiner Liste hinzu oder überprüfe deine Internetverbindung</value>
+  </data>
+  <data name="Please fill in all data completely" xml:space="preserve">
+    <value>Bitte fülle alle Daten vollständig und korrekt aus</value>
+  </data>
+  <data name="Program contains these exercises" xml:space="preserve">
+    <value>Diese Übungen stehen heute am Programm</value>
+  </data>
+  <data name="Progressive Overload" xml:space="preserve">
+    <value>Progressive Overload</value>
+  </data>
+  <data name="Remove exercise" xml:space="preserve">
+    <value>Übung entfernen</value>
+  </data>
+  <data name="Repetitions" xml:space="preserve">
+    <value>Wiederholungen</value>
+  </data>
+  <data name="Repetitions_ShortCut" xml:space="preserve">
+    <value>Wdh.</value>
+  </data>
+  <data name="Retry" xml:space="preserve">
+    <value>Erneut versuchen</value>
+  </data>
+  <data name="RM-formula" xml:space="preserve">
+    <value>RM - Formel</value>
+  </data>
+  <data name="RPE" xml:space="preserve">
+    <value>RPE</value>
+  </data>
+  <data name="Save_asQuestion" xml:space="preserve">
+    <value>Speichern?</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Suchen</value>
+  </data>
+  <data name="Select training cycle" xml:space="preserve">
+    <value>Trainingszyklus auswählen</value>
+  </data>
+  <data name="Select training days and exercises" xml:space="preserve">
+    <value>Trainingstage und Übungen auswählen</value>
+  </data>
+  <data name="Set" xml:space="preserve">
+    <value>Satz</value>
+  </data>
+  <data name="Should the password be changed" xml:space="preserve">
+    <value>Soll das Passwort geändert werden? \r\n(Neuerlicher Login erforderlich)</value>
+  </data>
+  <data name="Show current training cycle" xml:space="preserve">
+    <value>Aktuellen Trainingszyklus anzeigen</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Start exercise" xml:space="preserve">
+    <value>Übung starten</value>
+  </data>
+  <data name="Start Pause" xml:space="preserve">
+    <value>Pause starten</value>
+  </data>
+  <data name="Start training" xml:space="preserve">
+    <value>Training starten</value>
+  </data>
+  <data name="The cycle starts on" xml:space="preserve">
+    <value>Der Zylus startet am</value>
+  </data>
+  <data name="The email address exists" xml:space="preserve">
+    <value>Die Mail-Adresse existiert bereits</value>
+  </data>
+  <data name="Training break_in_min" xml:space="preserve">
+    <value>Trainingspause (min)</value>
+  </data>
+  <data name="training day description" xml:space="preserve">
+    <value>Wähle den Split für den Trainngstag aus und wähle anschließend alle Übungen, die du an diesem Tag trainieren möchtest.
+Sollte eine Übung nicht dabei sein, gehe zu deiner Übungsübersicht.</value>
+  </data>
+  <data name="Training days could not be loaded" xml:space="preserve">
+    <value>Trainingstage konnten nicht geladen werden</value>
+  </data>
+  <data name="Training Split" xml:space="preserve">
+    <value>Trainingssplit</value>
+  </data>
+  <data name="Training today" xml:space="preserve">
+    <value>Training heute</value>
+  </data>
+  <data name="Trainingdays twice Please contact support" xml:space="preserve">
+    <value>Trainingstage doppelt vorhanden. Bitte wende dich an den AppSupport.</value>
+  </data>
+  <data name="Trainingtime" xml:space="preserve">
+    <value>Trainingszeit</value>
+  </data>
+  <data name="UserID not available" xml:space="preserve">
+    <value>UserID nicht vorhanden</value>
+  </data>
+  <data name="View values from last training" xml:space="preserve">
+    <value>Werte des letzten Training anzeigen</value>
+  </data>
+  <data name="We check your training days" xml:space="preserve">
+    <value>Wir checken deine Trainingstage...</value>
+  </data>
+  <data name="We load your personal training cycle" xml:space="preserve">
+    <value>Wir laden deinen persönlichen Trainingszyklus</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Woche</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Gewicht</value>
+  </data>
+  <data name="Weight increments" xml:space="preserve">
+    <value>Gewichtsschritte</value>
+  </data>
+  <data name="What should your training day look like" xml:space="preserve">
+    <value>Wie soll dein Trainingstag aussehen?</value>
+  </data>
+  <data name="Would you like to exit from application" xml:space="preserve">
+    <value>Willst du die App schließen?</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+  </data>
+  <data name="Yes create training days" xml:space="preserve">
+    <value>Ja, Trainingstage jetzt erstellen</value>
+  </data>
+  <data name="Yes delete training days" xml:space="preserve">
+    <value>Ja, Trainingstage löschen</value>
+  </data>
+  <data name="Your exercises are searched" xml:space="preserve">
+    <value>Deine Übungen werden durchsucht...</value>
+  </data>
+  <data name="Your exercises from today" xml:space="preserve">
+    <value>Deine Übungen von heute</value>
+  </data>
+</root>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FitCycle": {
+      "commandName": "Project",
+      "sqlDebugging": false
+    }
+  }
+}

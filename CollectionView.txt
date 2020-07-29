@@ -1,0 +1,36 @@
+<Grid>
+                <StackLayout x:Name="StackLayout">
+                    <Label Text="Wähle eine Übung aus, um Details anzuzeigen"
+                        Padding="5"
+                        VerticalOptions="Start" 
+                        HorizontalOptions="CenterAndExpand" />
+
+                    <CollectionView ItemsSource="{Binding Items}">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Span="1" Orientation="Vertical" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnItemTapped"/>
+                                    </StackLayout.GestureRecognizers>
+                                    <Frame HasShadow="True"  Padding="0">
+                                        <Label Text="{Binding Text}" 
+                                           FontSize="Subtitle" 
+                                           TextColor="Black"
+                                           Padding="6"
+                                           Margin="2"
+                                           BackgroundColor="LightGray"
+                                           HorizontalTextAlignment="Center"/>
+                                    </Frame>
+                                    <Label HeightRequest="2"/>
+                                </StackLayout>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                    
+
+                </StackLayout>
+                <ActivityIndicator HorizontalOptions="Center" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
+            </Grid>

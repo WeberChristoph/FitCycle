@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rg:PopupPage  xmlns:rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+               xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+               xmlns:translate="clr-namespace:FitCycle.Resources"
+             xmlns:local="clr-namespace:FitCycle.ViewModels"
+             mc:Ignorable="d"
+             x:Class="FitCycle.Views.ProfileMenuPage">
+    <Grid  VerticalOptions="Start" HorizontalOptions="EndAndExpand">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="43"/>
+        </Grid.ColumnDefinitions>
+        <StackLayout WidthRequest="180" BackgroundColor="{StaticResource MainBlue}">
+            <ImageButton Source="profile_placeholder.png"
+                        Clicked="CloseMenu_Clicked"
+                        HeightRequest="55" 
+                        Padding="8"
+                        BackgroundColor="Transparent" 
+                        Grid.Column="0"
+                        HorizontalOptions="EndAndExpand"/>
+            <Button Text="{x:Static translate:AppResources.Edit_profile}" 
+                Clicked="ChangeAccount_Clicked" 
+                TextColor="White" 
+                Grid.Column="0"
+                WidthRequest="170"
+                HorizontalOptions="End"
+                BackgroundColor="Transparent"/>
+                <Button Text="{x:Static translate:AppResources.Logout}" 
+                Clicked="Logout_Clicked" 
+                TextColor="White" 
+                Grid.Column="0"
+                WidthRequest="90"
+                HorizontalOptions="EndAndExpand"
+                BackgroundColor="Transparent"/>
+        </StackLayout>
+    </Grid>
+</rg:PopupPage>
